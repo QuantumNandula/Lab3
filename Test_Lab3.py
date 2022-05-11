@@ -28,3 +28,18 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_bubble_sort_10():
+    result = []
+    input_arr = [64, 34, 25, 12, 22, 11, 90]
+    choice = 1
+    if choice == 0:
+        result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+        test_arr = [1, 2, 3, 11, 12, 22, 23, 34, 64, 98]
+    if choice == 1:
+        result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+        test_arr = [98, 64, 34, 23, 22, 12, 11, 3, 2, 1]
+    assert (result == test_arr)
+
+def
+
